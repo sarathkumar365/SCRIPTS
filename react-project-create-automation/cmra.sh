@@ -54,6 +54,10 @@ else
 	echo "NO storybook"
 fi
 
+echo "initializing new git repo for you"
+rm -rf .git
+git init
+
 echo "run npm start to start your app in development mode"
 echo "run npm build to build your app"
 
