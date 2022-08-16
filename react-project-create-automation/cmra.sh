@@ -69,6 +69,9 @@ echo "  "
 echo "Installing sass and sass-loader"
 npm install sass-loader sass --save-dev
 
+echo "Installinf file loader"
+npm install file-loader --save-dev
+
 echo "  "
 
 if [ $storybook_choice == "y" ]

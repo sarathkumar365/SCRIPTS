@@ -7,11 +7,12 @@ module.exports = {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',
     },
+    devtool:'source-map',
     devServer: {
         // static: {
         //   directory: path.resolve(__dirname, 'src/dist'),
         // },
-        port: 3300,
+        port: 3000,
         open: {
           app: {
             name: 'google-chrome',
@@ -36,7 +37,15 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
-              },
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ]
+            }
         ]
     },
     plugins: [
