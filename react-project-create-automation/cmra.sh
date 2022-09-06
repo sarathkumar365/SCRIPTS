@@ -15,8 +15,7 @@ read git_choice
 
 echo "  "
 
-
-git clone -b v2 --single-branch https://github.com/sarathkumar365/My-React-Template.git
+git clone https://github.com/sarathkumar365/My-React-Template.git
 
 
 mv My-React-Template $project_name
