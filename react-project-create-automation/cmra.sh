@@ -15,10 +15,10 @@ read git_choice
 
 echo "  "
 
-git clone https://github.com/sarathkumar365/My-React-Template.git
+git clone https://github.com/sarathkumar365/my-react-template.git
 
 
-mv My-React-Template $project_name
+mv my-react-template $project_name
 
 cd $project_name
 
